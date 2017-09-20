@@ -9,15 +9,20 @@
 
 }
 
-.menu-button{
-    width:3vw;
-    height:25px!important;
+.menu-button , .menu-button-inside {
+    background-color: transparent !important;
+    width:50px;
+    height:50px!important;
+    border-color: #7b1fa2!important; 
+    border-radius: 50% !important;
+}
+.menu-button-inside{
+    border-color: white !important;
+    float:right ! important;
 }
 
-.menu-button-inside {
-    width:3vw;
-    height:25px!important;
-    float: right !important;
+.icon-th-large{
+    color:#7b1fa2 !important;
 }
 
 .menu-list{

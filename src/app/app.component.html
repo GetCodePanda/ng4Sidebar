@@ -1,10 +1,21 @@
-<div  class="sidenav" [style.display]=" isOpen ? 'inline-block' : 'none' ">
-    <button (click)="toggleNav()" *ngIf="isOpen" class="menu-button-inside"> &times; </button>
-    <br>
-    <ul class="menu-list">
-      <li *ngFor="let menu of menus">
-          <a href="#" class="menu-list-item" >{{menu.viewContent}}</a>
-      </li>
-    </ul>
+<section id="sidenav">
+  <div  class="sidenav" [style.display]=" isOpen ? 'inline-block' : 'none' ">
+      <button id="close" *ngIf="isOpen" (click)="closeNav()" class="menu-button-inside">
+        <i class="icon-circle-arrow-left"  ></i>
+      </button>
+  
+      <br>
+      <ul class="menu-list">
+        <li *ngFor="let menu of menus">
+            <a href="#" class="menu-list-item" >{{menu.viewContent}}</a>
+        </li>
+      </ul>
   </div>
-<button (click)="toggleNav()" *ngIf="!isOpen"class="menu-button"> &times; </button>
+  <button id="open" *ngIf="!isOpen" (click)="openNav()" class="menu-button"> 
+    <i class="icon-th-large"  ></i>
+  </button>
+</section>
+
+<section id="content">
+  
+</section>
