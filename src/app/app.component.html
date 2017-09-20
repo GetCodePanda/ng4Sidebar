@@ -1,9 +1,10 @@
 <div  class="sidenav" [style.display]=" isOpen ? 'inline-block' : 'none' ">
     <button (click)="toggleNav()" *ngIf="isOpen" class="menu-button-inside"> &times; </button>
     <br>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <ul class="menu-list">
+      <li *ngFor="let menu of menus">
+          <a href="#" class="menu-list-item" >{{menu.viewContent}}</a>
+      </li>
+    </ul>
   </div>
 <button (click)="toggleNav()" *ngIf="!isOpen"class="menu-button"> &times; </button>

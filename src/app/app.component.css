@@ -1,9 +1,12 @@
 .sidenav{
+    position: relative !important;
     background-image: linear-gradient(135deg,#7b1fa2,#f44336) !important;
     width: 15vw !important;
     height: 100vh !important;
     margin-left:0px !important;
-    padding: 0 !important;
+    padding: 20px !important;
+    z-index: 123123213 !important;
+
 }
 
 .menu-button{
@@ -15,4 +18,15 @@
     width:3vw;
     height:25px!important;
     float: right !important;
+}
+
+.menu-list{
+    list-style-type: none !important;
+}
+
+.menu-list-item{
+    color:white !important;
+    display: block !important;
+    text-decoration: none !important;
+    font-size: 20px;
 }
